@@ -3,3 +3,4 @@ node_modules/
 
 # Vitepress cache
 /config/.vitepress/cache
+/config/.vitepress/dist

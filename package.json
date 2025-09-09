@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "vitepress dev config",
-    "build": "vitepress build config",
+    "build": "cross-env VERCEL_FORCE_NO_BUILD_CACHE=1 NODE_OPTIONS='--max-old-space-size=8192' vitepress build config",
     "preview": "vitepress preview config"
   },
   "dependencies": {

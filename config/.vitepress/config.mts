@@ -2,7 +2,11 @@ import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar'
 
 const vitePressOptions = {
-  srcDir: "..\\NoteNextra",
+  srcDir: "../NoteNextra",
+  // exclude files
+  srcExclude: ['**/README.md',],
+  // ignore dead links
+  ignoreDeadLinks: true,
   
   title: "NoteVP",
   description: "A vitepress powered Static Site Generator Backup",
@@ -66,7 +70,8 @@ const vitePressOptions = {
   // Reference: https://vitepress.dev/guide/routing#route-rewrites
   rewrites:{
     'content/:slug*': ':slug*'
-  }
+  },
+
 }
 
 const baseFolders=[
