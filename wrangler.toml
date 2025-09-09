@@ -1,0 +1,5 @@
+pages_build_output_dir= "config/.vitepress/dist"
+
+name = "notenextra"
+compatibility_date = "2025-02-13"
+compatibility_flags = ["nodejs_compat"]

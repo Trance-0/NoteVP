@@ -2,6 +2,11 @@ import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar'
 
 const vitePressOptions = {
+
+  build: {
+    chunkSizeWarningLimit: 1600, // Set the limit in KB
+  },
+
   srcDir: "../NoteNextra",
   // exclude files
   srcExclude: ['**/README.md',],
