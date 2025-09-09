@@ -9,6 +9,7 @@
     "preview": "vitepress preview config"
   },
   "dependencies": {
+    "cross-env": "^10.0.0",
     "vitepress-sidebar": "^1.33.0"
   }
 }
